@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>ArcGIS Web Samples</title>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+
+  <!--[if IE]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+  <![endif]-->
+
+
+  <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.0/css/calcite-web.min.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <script src="../assets/js/calcite-web.min.js"></script>
+  <script>
+  window.onload = function () {calcite.init();};
+  </script>
+</head>
+
+<body>
+
+  <header class="top-nav">
+    <div class="grid-container">
+      <div class="column-24">
+        <!-- desktop sized navigation -->
+
+          <!-- logo / home -->
+          <a href="../../" class="top-nav-title">ArcGIS Web Samples</a>
+          <!-- primary navigation sections -->
+          <nav class="top-nav-list" role="navigation">
+            <a href="../" class="top-nav-link">Home</a>
+            <a href="https://github.com/hhkaos/awesome-arcgis/" class="top-nav-link">Awesome resource list</a>
+
+
+          </nav>
+          <nav class="class-top-nav-list right" role="navigation" aria-labelledby="usernav">
+            <a href="https://github.com/hhkaos/awesome-arcgis/tree/master/arcgis" class="btn btn-white icon-ui-question right leader-half">What makes ArcGIS different?</a>
+          </nav>
+      </div>
+
+    </div>
+  </header>
+  <header class="sub-nav" role="banner">
+    <div class="grid-container">
+      <div class="column-24">
+        <h1 class="sub-nav-title leader-1 text-white">ArcGIS for front-end developers</h1>
+        <a href="#"
+          class="btn btn-white icon-ui-download right leader-1 trailer-1 tablet-hide">
+            Sample UX experiences
+        </a>
+        <nav class="sub-nav-list tablet-hide" role="navigation" aria-labelledby="subnav">
+          <a class="sub-nav-link " href="#">AngularJS</a>
+          <!--<a class="sub-nav-link " href="../../documentation/type/">Backbone</a>-->
+          <a class="sub-nav-link" href="#">Dojo</a>
+          <!--<a class="sub-nav-link " href="../../documentation/javascript/">EmberJS</a>-->
+          <a class="sub-nav-link is-active" href="#">jQuery</a>
+          <!--<a class="sub-nav-link " href="../../documentation/javascript/">Knockout</a>-->
+          <a class="sub-nav-link " href="#">Leaflet</a>
+          <!--<a class="sub-nav-link " href="../../documentation/javascript/">Openlayers</a>
+          <a class="sub-nav-link " href="../../documentation/javascript/">Phonegap</a>
+          <a class="sub-nav-link " href="../../documentation/javascript/">Polymer</a>
+          <a class="sub-nav-link " href="../../documentation/javascript/">React</a>
+          <a class="sub-nav-link " href="../../documentation/javascript/">Sencha</a>
+          <a class="sub-nav-link " href="../../documentation/javascript/">Vue.js</a>-->
+          <a class="sub-nav-link" href="#">Other frameworks</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid-container leader-1">
+    <div class="column-6">
+      <aside class="side-nav" aria-role="complementary">
+
+        <h4 class="side-nav-title">3.x samples</h4>
+        <!-- <nav aria-role="navigation" aria-labelledby="sidenav"> -->
+        <nav aria-role="navigation">
+          <a href="#module" class="side-nav-link">Load jQuery as a Dojo module</a>
+          <a href="#bootstrap" class="side-nav-link">Combine with Bootstrap</a>
+          <a href="#calcite-bootstrap" class="side-nav-link">Bootstrap + Calcite Theme</a>
+          <a href="#jquery-mobile" class="side-nav-link">jQuery Mobile</a>
+          <a href="#resources" class="side-nav-link">More resources</a>
+        </nav>
+
+        <!--
+        <h4 class="side-nav-title">4.x samples</h4>
+        <nav aria-role="navigation">
+          <a href="#module" class="side-nav-link">Load jQuery as a Dojo module</a>
+          <a href="#bootstrap" class="side-nav-link">Bootstrap</a>
+          <a href="#button-groups" class="side-nav-link">jQuery Mobile</a>
+          <a href="#resources" class="side-nav-link">More resources</a>
+        </nav>
+        -->
+    </aside>
+    <div class="js-sticky scroll-show tablet-hide" data-top="46">
+      <a href="#" class="btn btn-clear">Back to Top</a>
+    </div>
+    </div>
+    <div class="column-18">
+      <p>
+        Here you will find how to use jQuery with ArcGIS API for Javascript
+        version <a href="">3.x</a> and <a href="">4.x</a>.
+      </p>
+
+      <h3 id="module" class="trailer-half">Load jQuery as a Dojo module</h3>
+      <p>
+          This sample show you how you can combine the <a href="#">ArcGIS API
+          for JavaScript</a> which is build on top of <a href="#">Dojo</a> with
+          jQuery. <br>
+          We recommend you to do that if you fill confortable using jQuery to
+          manage: DOM elements, events, AJAX, etc.
+      </p>
+      <div style="height:365px">
+        <p data-height="365" data-theme-id="0" data-slug-hash="mOaVJG" data-default-tab="js,result" data-user="hhkaos" data-embed-version="2" data-pen-title="Cargar jQuery como un módulo" class="codepen">See the Pen <a href="http://codepen.io/hhkaos/pen/mOaVJG/">Cargar jQuery como un módulo</a> by Raul Jimenez Ortega (<a href="http://codepen.io/hhkaos">@hhkaos</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      </div>
+
+      <div class="trailer-4 leader-half">
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/share/zip/mOaVJG/"
+              class="btn right btn-dark btn-fill">
+              Download .zip
+            </a>
+        </div>
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/pen/mOaVJG"
+              class="btn right btn-dark btn-fill">
+              Edit in Codepen
+            </a>
+        </div>
+      </div>
+
+
+      <h3 id="bootstrap" class="trailer-half">Combine with Bootstrap</h3>
+      <p>
+        <a href="https://github.com/Esri/bootstrap-map-js">Bootstrap-map-js</a>
+        is a light-weight extension for building responsive web mapping apps with
+        the ArcGIS API for JavaScript and Bootstrap (ver 3.x).
+        Maps will automatically resize and recenter as the screen size changes or
+        they can be set to a fixed size. Pop-ups will stay within the screen view
+        and are styled to match Bootstrap.
+      </p>
+
+      <div style="height:365px">
+        <p data-height="365" data-theme-id="0" data-slug-hash="KNbYXp" data-default-tab="js,result" data-user="hhkaos" data-embed-version="2" data-pen-title="Cargar jQuery como un módulo" class="codepen">See the Pen <a href="http://codepen.io/hhkaos/pen/KNbYXp/">Cargar jQuery como un módulo</a> by Raul Jimenez Ortega (<a href="http://codepen.io/hhkaos">@hhkaos</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      </div>
+
+      <div class="trailer-4 leader-half">
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/share/zip/KNbYXp/"
+              class="btn right btn-dark btn-fill">
+              Download .zip
+            </a>
+        </div>
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/pen/KNbYXp"
+              class="btn right btn-dark btn-fill">
+              Edit in Codepen
+            </a>
+        </div>
+      </div>
+
+      <h3 id="calcite-bootstrap" class="trailer-half">Bootstrap + Calcite Theme</h3>
+      <p>
+        <a href="https://github.com/Esri/calcite-bootstrap">Calcite Bootstrap</a>
+        is a custom theme and a custom build system for Bootstrap. The theme is
+        based on Calcite - a geo-centric design framework created by ESRI.
+        Calcite Bootstrap was built for developers who have experience working
+        with Bootstrap and would like to integrate the Calcite theme and build
+        system to their web pages and apps.
+      </p>
+      <div style="height:365px">
+        <p data-height="365" data-theme-id="0" data-slug-hash="zoyXyE" data-default-tab="js,result" data-user="hhkaos" data-embed-version="2" data-pen-title="Cargar jQuery como un módulo" class="codepen">See the Pen <a href="http://codepen.io/hhkaos/pen/zoyXyE/">Cargar jQuery como un módulo</a> by Raul Jimenez Ortega (<a href="http://codepen.io/hhkaos">@hhkaos</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      </div>
+
+      <div class="trailer-4 leader-half">
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/share/zip/zoyXyE/"
+              class="btn right btn-dark btn-fill">
+              Download .zip
+            </a>
+        </div>
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/pen/zoyXyE"
+              class="btn right btn-dark btn-fill">
+              Edit in Codepen
+            </a>
+        </div>
+      </div>
+
+      <h3 id="jquery-mobile" class="trailer-half">jQuery Mobile</h3>
+      <p>
+        <a href="https://github.com/Esri/jquery-mobile-map-js">jquery-mobile-map-js</a>
+        is a lightweight helper library for use with jQuery mobile and the
+        ArcGIS API for JavaScript 3.x. This library isn't required for ArcGIS
+        API for JavaScript v4.x.
+      </p>
+      <div style="height:365px">
+        <p data-height="365" data-theme-id="0" data-slug-hash="pNqmge" data-default-tab="js,result" data-user="hhkaos" data-embed-version="2" data-pen-title="Cargar jQuery como un módulo" class="codepen">See the Pen <a href="http://codepen.io/hhkaos/pen/pNqmge/">Cargar jQuery como un módulo</a> by Raul Jimenez Ortega (<a href="http://codepen.io/hhkaos">@hhkaos</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+      </div>
+
+      <div class="trailer-4 leader-half">
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/share/zip/pNqmge/"
+              class="btn right btn-dark btn-fill">
+              Download .zip
+            </a>
+        </div>
+        <div class="column-9">
+            <a
+              href="http://codepen.io/hhkaos/pen/pNqmge"
+              class="btn right btn-dark btn-fill">
+              Edit in Codepen
+            </a>
+        </div>
+      </div>
+
+      <h3 id="resources" class="trailer-half">More resources</h3>
+      <p>
+        Do you want more? need some help? Take a look to the
+        <a href="https://github.com/hhkaos/awesome-arcgis/tree/master/front-end/jquery">awesome-arcgis repo</a>, there you will find: where the
+        community is, some videos, training, people that you may want to
+        follow, etc.
+      </p>
+    </div>
+
+  </div>
+
+  <footer class="footer leader-4 link-dark-gray" role="contentinfo">
+        <div class="grid-container">
+            <nav class="column-6">
+              <h6>Styleguides</h6>
+              <ul class="list-plain">
+                <li><a href="../../guides/code/javascript/">JavaScript</a></li>
+                <li><a href="../../guides/code/css/">CSS</a></li>
+                <li><a href="../../guides/code/html/">HTML</a></li>
+              </ul>
+            </nav>
+
+            <nav class="column-6">
+              <h6>Resources</h6>
+              <ul class="list-plain">
+                <li><a href="../../guides/migration-guide/">Migration Guide</a></li>
+                <li><a href="https://github.com/Esri/calcite-web/releases/">Releases</a></li>
+                <li><a href="https://github.com/Esri/calcite-web/blob/master/CONTRIBUTING.md">Contributing</a></li>
+                <li><a href="https://github.com/Esri/calcite-web/issues/">Issues</a></li>
+                <li><a href="https://github.com/Esri/calcite-web/">GitHub</a></li>
+              </ul>
+            </nav>
+
+            <nav class="column-6">
+              <h6>About Esri</h6>
+              <ul class="list-plain">
+                <li><a href="http://www.esri.com/about-esri/">About Us</a></li>
+                <li><a href="http://www.esri.com/careers/">Careers</a></li>
+                <li><a href="http://blogs.esri.com/esri/esri-insider/">Insiders Blog</a></li>
+                <li><a href="http://www.esri.com/events/user-conference/index.html">User Conference</a></li>
+                <li><a href="http://www.esri.com/events/devsummit/index.html">Developer Summit</a></li>
+              </ul>
+            </nav>
+
+            <nav class="column-6">
+              <a class="esri-logo" href="http://esri.com" aria-label="Esri Home"></a>
+              <section class="footer-social-nav leader-1">
+                <a class="icon-social-twitter" aria-label="Esri on Twitter" href="https://twitter.com/Esri/"></a>
+                <a class="icon-social-facebook" aria-label="Esri on Facebook" href="https://www.facebook.com/esrigis/"></a>
+                <a class="icon-social-instagram" aria-label="Esri on Instagram" href="https://instagram.com/esrigram/"></a>
+                <a class="icon-social-github" aria-label="Esri on GitHub" href="http://esri.github.com/"></a>
+                <a class="icon-social-contact" aria-label="Contact Esri" href="http://www.esri.com/about-esri/contact/"></a>
+              </section>
+            </nav>
+
+            <div class="column-24 leader-1">
+              <p><small>Copyright © 2015 Esri. All rights reserved. | <a href="http://www.esri.com/legal/privacy">Privacy</a> | <a href="http://www.esri.com/legal">Legal</a></small></p>
+            </div>
+          </div>
+
+
+      </footer>
+  <script src="../assets/js/jquery.min.js"></script>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+</body>
+</html>
