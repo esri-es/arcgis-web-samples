@@ -4,3 +4,41 @@
 .sub-nav{
   background-color: #052942;
 }
+
+.featured-feature{
+  text-align: center;
+  position: relative;
+  display: table;
+  width: 250px;
+  height: 175px;
+  border: 2px solid #052942;
+  background-color: #052942;
+  margin: 0 auto;
+}
+
+.featured-feature .cell{
+  display: none;
+}
+
+.featured-feature:hover .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.featured-feature:hover .cell > div{
+  background: rgba(255,255,255,.8);
+  display: block;
+  font-size: .8rem;
+  padding: .5rem;
+}
+
+.featured-feature:hover .cell a{
+  margin: 0 5px;
+}
+.cell .btn-transparent{
+  text-decoration: none;
+  color: #052942
+}
+.cell .btn-transparent:hover{
+  cursor: default;
+}
